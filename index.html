@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <div class="title">
+        <h1>Get <a href="https://twitter.com/data_question">#RStats</a> Question A Day</h1>
+    </div>
+
+    <div class="login-box">
+        <h2>Subscribe for daily questions</h2>
+        <form id="register-new-user">
+            <div class="user-box">
+                <input type="email" name="emailId" id="emailId">
+                <label for="emailId">Email Id</label>
+            </div>
+            <div class="user-box">
+                <input type="time" name="emailSendTime" id="emailSendTime">
+                <label for="emailSendTime">Time to get the email</label>
+            </div>
+            <div class="subscribe">
+                <a href="https://4ry8btjfrk.execute-api.ap-south-1.amazonaws.com/create/user" id="registerLink">
+                    Subscribe
+                </a>
+                <div class="registerSuccess" id="registerSuccessText">
+                    <p>Thanks for registering. Check your inbox for more details.</p>
+                </div>
+                <div class="registerUnsuccessful" id="registerUnSuccessfulText">
+                    <p>Unable to register, please try after sometime.</p>
+                </div>
+                <div class="emailCheck" id="emailCheck">
+                    <p>Incorrect email Id provided. Please provide correct email to register.</p>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
